@@ -6,6 +6,10 @@
     --dark-blue-color: #122e44;
     --light-green-color: #159A98;
     --light-red-color: #E84874;
+    --light-blue-dark-color: #183349;
+    --yellow-color: #DFB600;
+    --dark-gray-color: #252D36;
+    --orange-color: #F19E1C;
 }
 
 * {
@@ -25,8 +29,10 @@
 html,
 body {
     scroll-behavior: smooth;
-   background-color: rebeccapurple;   /* Kalkacak */
-    height: 500vh;  /* Kalkacak */
+    background-color: rebeccapurple;
+    /* Kalkacak */
+    height: 500vh;
+    /* Kalkacak */
 }
 
 .header {
@@ -120,4 +126,291 @@ body {
 
 .btn:hover {
     opacity: .8;
+}
+
+.softwares {
+    background-color: var(--dark-blue-color);
+    color: var(--light-color);
+    padding: 10px 5% 100px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.title h1 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.title:hover {
+    background-color: var(--light-green-color);
+    color: var(--light-color);
+}
+
+.softwares-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.software-card {
+    width: 20%;
+    background-color: var(--light-blue-dark-color);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+.software-card:hover {
+    border-color: var(--light-green-color);
+}
+
+.software-card i {
+    color: var(--light-green-color);
+    font-size: 25px;
+}
+
+.certificates {
+    background-color: var(--dark-blue-color);
+    color: var(--light-color);
+    padding: 10px 5% 100px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.certificate-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+
+}
+
+.certificate-card {
+    width: 20%;
+    height: auto;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 15px;
+
+}
+
+.certificate-card:hover {
+    border-color: var(--light-green-color);
+}
+
+.certificate-image-container {
+    width: 100%;
+}
+
+.certificate-image-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.certificate-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.certificate-titles h4 {
+    font-weight: 400;
+}
+
+.certificate-titles h2 {
+    font-weight: 600;
+}
+
+.certificate-info .certificate-stars {
+    color: var(--yellow-color);
+}
+
+.achievements {
+    background-color: var(--dark-blue-color);
+    color: var(--light-color);
+    padding: 10px 5% 100px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.achievement-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.achievement-image {
+    text-align: center;
+}
+
+.achievement-image img {
+    width: 55%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.achievement-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.achievement-card {
+    width: 35%;
+    padding: 40px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.achievement-card:hover {
+    transform: scale(1.05);
+}
+
+.achievement-card h2 {
+    font-weight: bold;
+}
+
+.achievement-card h1 {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.bg-warning {
+    background-color: var(--orange-color);
+}
+
+.bg-danger {
+    background-color: var(--light-red-color);
+}
+
+.bg-green {
+    background-color: var(--light-green-color);
+}
+
+.bg-dark-blue {
+    background-color: var(--dark-gray-color);
+}
+
+.about {
+    background-color: var(--dark-blue-color);
+    color: var(--light-color);
+    padding: 10px 5% 100px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-card {
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+    gap: 10px;
+}
+
+.profile-image img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-card h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--light-green-color);
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+}
+
+.about-card h3:hover {
+    border-color: var(--light-green-color);
+}
+
+.about-card h4 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contact {
+    background-color: var(--dark-blue-color);
+    color: var(--light-color);
+    padding: 10px 5% 100px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.contact-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-image img{
+    width: 75%;
+    border-radius: 10px;
+}
+
+.contact-form-container{
+    width: 50%;
+    background-color: blue;
+}
+
+.contact-form{
+    width: 75%;
+    display: flex;
+    padding: 50px 30px;
+    gap: 30px;
+    flex-direction: column;
+
 }
